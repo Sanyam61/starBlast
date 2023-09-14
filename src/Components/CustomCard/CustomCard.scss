@@ -1,0 +1,119 @@
+.Custom_Card_Wrapper {
+    .cardWrapper {
+        width: 90%;
+        border-radius: 12px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 99%;
+            height: 99%;
+            background: linear-gradient(0deg, rgba(29, 34, 54, 0.87), rgba(29, 34, 54, 0.87)),
+                radial-gradient(59.09% 134.58% at 4.04% 13.64%, rgba(73, 120, 240, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+            border-radius: 12px;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(138.7deg, #7299ff 6.69%, rgba(0, 59, 211, 0) 30.73%, #a5beff 99%);
+            border-radius: 12px;
+            z-index: 0;
+        }
+        .cardBody {
+            position: relative;
+            z-index: 1;
+            padding: 14px 12px;
+            .cardTitle {
+                font-size: 12px;
+                font-weight: 600;
+                color: #ffffff;
+                margin-bottom: 8px;
+            }
+            .chipWrapper {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 6px;
+                .chip {
+                    background: #060417;
+                    padding: 4px 8px 4px 8px;
+                    border-radius: 200px;
+                    .imgWrapper {
+                        width: 12px;
+                        height: 12px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    span {
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-size: 8px;
+                        letter-spacing: 0.3px;
+                    }
+                }
+            }
+            .graphIconWrapper {
+                width: 32px;
+                height: 32px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .hideChipContainer {
+                transition: 2s ease-in-out;
+            }
+            .showChipContainer {
+                display: none;
+                transition: 2s ease-in-out;
+            }
+        }
+        .cardFooter {
+            position: relative;
+            z-index: 1;
+            transform: scale(0.99);
+            background: linear-gradient(#1c60ff, #1244ae);
+            border-radius: 0 0 12px 12px;
+            padding: 8px 12px;
+            span {
+                font-size: 10px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+            button {
+                min-width: 44px;
+                background: #1244ae;
+                color: #dfe4f0;
+                border: 0.5px solid #dfe4f0;
+                border-radius: 12px;
+                padding: 4px 8px;
+                font-size: 10px;
+                font-weight: 600;
+            }
+        }
+        &:hover {
+            .cardBody {
+                &:hover {
+                    .hideChipContainer {
+                        display: none;
+                    }
+                    .showChipContainer {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
