@@ -20,7 +20,8 @@ body {
   background-color: black;
   display: -webkit-box;
   display: flex;
-  padding: 0 72px;
+  padding: 0;
+  /* padding: 0 72px; */
 }
 
 .sky {
