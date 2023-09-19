@@ -1,0 +1,108 @@
+.stargazeTeamWrapper {
+    .mainTitle {
+        font-size: 45px;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+
+        span {
+            color: #1C60FF;
+        }
+    }
+
+    .stargazeWrap {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                font-size: 24px;
+                font-weight: 400;
+                color: #B5C9FF;
+
+                b {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .dreamTeamWrapper {
+        .horizontalCardWrapper {
+
+            background: linear-gradient(108.7deg, #7299FF 6.69%, rgba(0, 59, 211, 0) 30.73%, #A5BEFF 99%);
+            padding: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 12px;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #0B1026;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 12px;
+                transform: scale(0.998, 0.99);
+            }
+
+            .cardImg {
+                width: 160px;
+                height: 160px;
+                min-width: 130px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .cardBody {
+                h6 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #B5C9FF;
+                }
+
+                button {
+                    background: linear-gradient(108.7deg, #7299FF 6.69%, rgba(0, 59, 211, 0) 30.73%, #A5BEFF 99%);
+                    color: #FFFFFF;
+                    padding: 12px 24px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 12px;
+                    position: relative;
+                    z-index: 2;
+                    margin-top: 24px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: radial-gradient(41.6% 38.95% at 52.1% 101.92%, #1244AE 0%, #09081C 100%),
+                            linear-gradient(108.7deg, #7299FF 6.69%, rgba(0, 59, 211, 0) 30.73%, #A5BEFF 99%);
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
