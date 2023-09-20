@@ -1,0 +1,21 @@
+.Headerbar_Wrapper {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9;
+    .Menu_Wrapper {
+        height: 42px;
+        width: 120px;
+        color: #fff;
+        border-radius: 6px;
+        background: radial-gradient(41.6% 38.95% at 52.1% 101.92%, #1244AE 0%, #09081C 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

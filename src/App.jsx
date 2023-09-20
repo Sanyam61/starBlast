@@ -7,6 +7,7 @@ import RelavantProject from "./Components/RelavantProject/RelavantProject";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StargazeTeam from "./Components/StargazeTeam/StargazeTeam";
+import HomePage from "./Components/CustomCard/HomePage/HomePage";
 
 function App(props) {
   return (
@@ -25,6 +26,9 @@ function App(props) {
       {/* <div style={{ padding: "100px 0" }}> */}
       {/* </div> */}
       {/* <div className="star_wrapper_box">
+    <HomePage/>
+    {/* <CustomCard /> */}
+    {/* <div className="star_wrapper_box">
       <div className="component_box"></div>
         <div class="sky">
           <div class="star"></div>
