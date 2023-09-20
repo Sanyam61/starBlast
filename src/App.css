@@ -134,3 +134,17 @@ to tail of star */
     padding: 12px;
   }
 }
+
+.Main_App_Wrapper {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+.Main_App_Wrapper::-webkit-scrollbar {
+  display: none;
+}
+.Snap_Area {
+  scroll-snap-align: start;
+  height: 100vh;
+}

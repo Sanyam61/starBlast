@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
 import CustomCard from "./Components/CustomCard/CustomCard";
 import RelavantProject from "./Components/RelavantProject/RelavantProject";
 // Import css files
@@ -11,9 +11,19 @@ import StargazeTeam from "./Components/StargazeTeam/StargazeTeam";
 function App(props) {
   return (
     <>
-      <CustomCard />
-      <RelavantProject />
-      <StargazeTeam />
+      <div className="Main_App_Wrapper">
+        <div className="Snap_Area">
+          <CustomCard />
+        </div>
+        <div className="Snap_Area">
+          <RelavantProject />
+        </div>
+        <div className="Snap_Area">
+          <StargazeTeam />
+        </div>
+      </div>
+      {/* <div style={{ padding: "100px 0" }}> */}
+      {/* </div> */}
       {/* <div className="star_wrapper_box">
       <div className="component_box"></div>
         <div class="sky">
