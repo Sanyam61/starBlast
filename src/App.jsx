@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import CustomCard from "./Components/CustomCard/CustomCard";
 import RelavantProject from "./Components/RelavantProject/RelavantProject";
